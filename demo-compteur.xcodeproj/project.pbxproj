@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		37168528251F4A7B005403F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37168527251F4A7B005403F3 /* ContentView.swift */; };
 		3716852A251F4A7C005403F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37168529251F4A7C005403F3 /* Assets.xcassets */; };
 		3716852D251F4A7C005403F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3716852C251F4A7C005403F3 /* Preview Assets.xcassets */; };
+		37168537251F5A2A005403F3 /* Shiny in Frameworks */ = {isa = PBXBuildFile; productRef = 37168536251F5A2A005403F3 /* Shiny */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37168537251F5A2A005403F3 /* Shiny in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = "demo-compteur";
+			packageProductDependencies = (
+				37168536251F5A2A005403F3 /* Shiny */,
+			);
 			productName = "demo-compteur";
 			productReference = 37168522251F4A7B005403F3 /* demo-compteur.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 37168519251F4A7B005403F3;
+			packageReferences = (
+				37168535251F5A2A005403F3 /* XCRemoteSwiftPackageReference "shiny" */,
+			);
 			productRefGroup = 37168523251F4A7B005403F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37168535251F5A2A005403F3 /* XCRemoteSwiftPackageReference "shiny" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maustinstar/shiny.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37168536251F5A2A005403F3 /* Shiny */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37168535251F5A2A005403F3 /* XCRemoteSwiftPackageReference "shiny" */;
+			productName = Shiny;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3716851A251F4A7B005403F3 /* Project object */;
 }
